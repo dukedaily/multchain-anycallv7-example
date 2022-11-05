@@ -8,8 +8,12 @@ yarn || npm install
 
  2. Deploy the example contract on ftm testnet and bnb testnet. Make sure you have gas tokens on both chains.
  Run these two commands:
-"yarn hardhat deploy --network ftmtest"
-"yarn hardhat deploy --network bnbtest"
 
-3. Test the flow by running the below command. (You can change customMessage in 1testanycall.js to change the message sent)
- yarn hardhat run ./scripts/1testanycall.js --network ftmtest
+ ```sh
+ # 0x48636063bD54f705E8c5b5858a0462F896c05ADC
+yarn hardhat deploy --network ftmtest
+
+# 0x8B43B8E728Af345830732A6A0Bd78BB754Fd51a3
+yarn hardhat deploy --network bnbtest
+ yarn hardhat run ./scripts/1testanycall.js --network bnbtest
+ ```
